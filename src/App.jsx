@@ -6,7 +6,7 @@ import { NavBar } from './components/NavBar/NavBar'
 function App () {
   return (
     <>
-      <header>
+      <header className='flex justify-between items-center bg-gray-400 p-7 w-[100vw]'>
         <NavBar />
       </header>
       <main>
