@@ -6,7 +6,7 @@ import './App.css'
 function App () {
   return (
     <>
-      <header className='flex justify-between items-center bg-gray-500 p-3 w-[100vw]  z-10'>
+      <header className='flex justify-between items-center bg-gray-500  w-full h-[60px] z-10'>
         <NavBar />
       </header>
       <main className='z-0'>

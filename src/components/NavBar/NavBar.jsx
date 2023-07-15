@@ -18,7 +18,7 @@ function NavBar () {
           <img
             src='/navLogo_Mesa de trabajo 1_Mesa de trabajo 1.svg '
             alt=''
-            className='w-[20%] cursor-pointer '
+            className='w-[200px] cursor-pointer '
             onClick={() => navigate('/')}
           />
           <nav className='flex gap-3 text-xl '>
@@ -29,7 +29,9 @@ function NavBar () {
         </>
           )
         : (
-        <IconContext.Provider value={{ className: 'w-[40px] h-[40px] text-gray-200 ml-10' }}>
+        <IconContext.Provider
+          value={{ className: 'w-[40px] h-[40px] text-gray-200 ml-10' }}
+        >
           <GiHamburgerMenu />
         </IconContext.Provider>
           )}
