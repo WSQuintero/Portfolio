@@ -38,28 +38,27 @@ function Home () {
         <h2 className='font-righteous text-3xl text-[#aaaaaa] '>
           Diseñador visual
         </h2>
-        <div className='flex gap-5 mt-20 sm:mt-0 flex-col'>
-
-        <button
-          className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-red-400 hover:text-gray-200'
-          onClick={() => navigate('/projects')}
-        >
-          Projects
-        </button>
-        <button
-          className='w-[200px] bg-gray-200 p-3 rounded-lg z-10 text-[#5B5B5B]  text-xl hover:bg-blue-400 hover:text-gray-200 '
-          onClick={() => navigate('/about-me')}
-        >
-          About me
-        </button>
+        <div className='flex gap-5 mt-20 sm:mt-0 flex-col '>
+          <button
+            className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-red-400 hover:text-gray-200 '
+            onClick={() => navigate('/projects')}
+          >
+            Projects
+          </button>
+          <button
+            className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-blue-400 hover:text-gray-200 '
+            onClick={() => navigate('/about-me')}
+          >
+            About me
+          </button>
         </div>
       </div>
-      <figure className=' min-w-[250px] max-w-[800px] absolute overflow-hidden flex justify-center items-center top-60 sm:top-auto  z-0'>
+      <figure className=' max-w-[400px] max-h-[400px] absolute overflow-hidden flex justify-center items-center top-40 sm:top-auto  z-0'>
         <img
           src='https://i.ibb.co/tJgCrCP/rostro-editado-1-1.png'
           alt='rostro-editado-1-1'
           border='0'
-          className='min-w-[200px] h-[20%] z-0 '
+          className=' w-[300px] h-[300px] object-cover '
         />
       </figure>
     </div>
