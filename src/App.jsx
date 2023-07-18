@@ -6,10 +6,10 @@ import './App.css'
 function App () {
   return (
     <>
-      <header className='flex justify-between items-center bg-gray-500  w-full h-[60px] z-10'>
+      <header className='flex justify-between items-center bg-[#686868]  w-full h-[60px] z-10 header absolute font-righteous '>
         <NavBar />
       </header>
-      <main className='z-0'>
+      <main className='font-righteous '>
         <AppRoutes />
       </main>
       <footer></footer>
