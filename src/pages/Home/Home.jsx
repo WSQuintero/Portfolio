@@ -24,7 +24,7 @@ function Home () {
                   : '/Logo_Mesa de trabajo_color.svg'
               }
               alt=''
-              className={`w-[300px] relative cursor-pointer ${
+              className={`w-[300px] relative cursor-pointer mt-20 ${
                 !changeLogo && 'opacity-20'
               }`}
             />
@@ -32,7 +32,7 @@ function Home () {
         )}
       </div>
       <div className='w-full sm:w-[50%] bg-[#5B5B5B] h-full flex flex-col justify-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0'>
-        <h1 className='flex items-center text-center w-[250px] sm:w-[334px] sm:text-end text-6xl text-[#CECECE] z-20 min-w-[200px] lg:w-full lg:justify-end'>
+        <h1 className='flex items-center text-center w-[250px] sm:w-[334px] sm:text-end text-6xl text-blue-400 z-20 min-w-[200px] lg:w-full lg:justify-end '>
           Desarrollador Front end
         </h1>
         <h2 className='font-righteous text-3xl text-[#aaaaaa] '>
@@ -54,7 +54,7 @@ function Home () {
         </button>
         </div>
       </div>
-      <figure className=' min-w-[250px] max-w-[800px] absolute overflow-hidden flex justify-center items-center top-40 z-0'>
+      <figure className=' min-w-[250px] max-w-[800px] absolute overflow-hidden flex justify-center items-center top-60 sm:top-auto  z-0'>
         <img
           src='https://i.ibb.co/tJgCrCP/rostro-editado-1-1.png'
           alt='rostro-editado-1-1'
