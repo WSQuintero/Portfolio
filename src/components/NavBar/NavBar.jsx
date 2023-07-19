@@ -1,18 +1,27 @@
-import React, { useContext } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import React, { useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { MyContext } from '../../context/MyContext/MyContext'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IconContext } from 'react-icons'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { HiAcademicCap } from 'react-icons/hi2'
+import { BurguerMenu } from '../BurguerMenu/BurguerMenu'
+import { Nav } from '../Nav/Nav'
+
 function NavBar () {
   const navigate = useNavigate()
-  const { movilSize, listeningResize } = useContext(MyContext)
-  const styles = ({ isActive }) =>
-    isActive
-      ? 'h-full bg-blue-300 text-[#5B5B5B] inline-block w-[33%] text-center '
-      : 'h-full bg-[#CECECE] text-[#5B5B5B] inline-block w-[33%] text-center'
-  listeningResize()
+  const {
+    movilSize,
+    listeningResize,
+    isBurguerMenuActive,
+    setIsBurguerMenuActive
+  } = useContext(MyContext)
+  
+  const handleClickMenu = () => setIsBurguerMenuActive(!isBurguerMenuActive)
+
+  useEffect(() => {
+    listeningResize()
+  }, [movilSize])
 
   return (
     <>
@@ -25,7 +34,7 @@ function NavBar () {
             className='w-[150px] h-[80%] rounded-3xl cursor-pointer bg-[#CECECE] ml-10'
             onClick={() => navigate('/')}
           />
-          <div className='flex gap-10 justify-center relative left-[calc(0vw+125px)]'>
+          <div className='flex gap-10 justify-center relative xl:left-[calc(0vw+125px)]'>
             <IconContext.Provider
               value={{
                 className: 'w-[40px] h-[40px] text-[#CECECE] cursor-pointer'
@@ -36,26 +45,17 @@ function NavBar () {
               <HiAcademicCap />
             </IconContext.Provider>
           </div>
-          <nav className='flex  text-xl text-[#CECECE] mr-10 border border-[#CECECE] px-10  w-[30%] justify-between rounded-lg gap-6'>
-            <NavLink to={'/about-me'} className={styles}>
-              About me
-            </NavLink>
-            <NavLink to={'/projects'} className={styles}>
-              Projects
-            </NavLink>
-            <NavLink to={'/contact'} className={styles}>
-              Contact me
-            </NavLink>
-          </nav>
+          <Nav/>
         </>
           )
         : (
         <IconContext.Provider
           value={{ className: 'w-[40px] h-[40px] text-gray-200 ml-10' }}
         >
-          <GiHamburgerMenu />
+          <GiHamburgerMenu onClick={handleClickMenu} />
         </IconContext.Provider>
           )}
+      {isBurguerMenuActive && <BurguerMenu />}
     </>
   )
 }

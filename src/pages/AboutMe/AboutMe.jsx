@@ -1,18 +1,11 @@
 import React, { useRef, useState } from 'react'
 import { IconContext } from 'react-icons'
 import { BsArrowRightCircleFill } from 'react-icons/bs'
+import { imgLogos } from '../../DB/imgLogos'
 
 function AboutMe () {
   const scroll = useRef(null)
   const [isScrolled, setIsScrolled] = useState(false)
-  const imgLogos = [
-    '/html.svg',
-    '/css.svg',
-    '/js (2).svg',
-    '/React.svg',
-    '/tailwind.svg',
-    '/git 2.svg'
-  ]
 
   const handleScroll = () => {
     const containerScrollWidth = scroll.current.clientWidth
