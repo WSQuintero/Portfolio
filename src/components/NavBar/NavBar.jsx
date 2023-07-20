@@ -1,12 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { MyContext } from '../../context/MyContext/MyContext'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IconContext } from 'react-icons'
-import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
-import { HiAcademicCap } from 'react-icons/hi2'
 import { BurguerMenu } from '../BurguerMenu/BurguerMenu'
 import { Nav } from '../Nav/Nav'
+import { ContactIcons } from '../ContactIcons/ContactIcons'
 
 function NavBar () {
   const navigate = useNavigate()
@@ -16,7 +15,7 @@ function NavBar () {
     isBurguerMenuActive,
     setIsBurguerMenuActive
   } = useContext(MyContext)
-  
+
   const handleClickMenu = () => setIsBurguerMenuActive(!isBurguerMenuActive)
 
   useEffect(() => {
@@ -34,18 +33,8 @@ function NavBar () {
             className='w-[150px] h-[80%] rounded-3xl cursor-pointer bg-[#CECECE] ml-10'
             onClick={() => navigate('/')}
           />
-          <div className='flex gap-10 justify-center relative xl:left-[calc(0vw+125px)]'>
-            <IconContext.Provider
-              value={{
-                className: 'w-[40px] h-[40px] text-[#CECECE] cursor-pointer'
-              }}
-            >
-              <AiFillGithub />
-              <AiFillLinkedin />
-              <HiAcademicCap />
-            </IconContext.Provider>
-          </div>
-          <Nav/>
+          <ContactIcons />
+          <Nav />
         </>
           )
         : (

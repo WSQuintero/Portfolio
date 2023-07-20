@@ -27,21 +27,21 @@ function Nav () {
         className={styles}
         onClick={() => setIsBurguerMenuActive(false)}
       >
-        About me
+        Sobre mi
       </NavLink>
       <NavLink
         to={'/projects'}
         className={styles}
         onClick={() => setIsBurguerMenuActive(false)}
       >
-        Projects
+        Projectos
       </NavLink>
       <NavLink
         to={'/contact'}
         className={styles}
         onClick={() => setIsBurguerMenuActive(false)}
       >
-        Contact me
+        Contactame
       </NavLink>
     </nav>
   )

@@ -40,8 +40,8 @@ function AboutMe () {
       <section className='w-full lg:w-1/5 bg-[#5B5B5B] h-[200px] lg:h-[100vh] '></section>
       <section className='w-full lg:w-4/6 bg-[#CECECE] h-[100vh] flex flex-col justify-center items-center p-20 relative gap-10'>
         <article className='border border-[#5B5B5B] p-5'>
-          <h1 className='text-6xl text-blue-400 w-full text-start'>Sobre mi</h1>
-          <p className='mt-10 text-justify'>
+          <h1 className='text-5xl text-blue-400 w-full text-start'>Sobre mi</h1>
+          <p className='mt-3 text-justify'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
             asperiores pariatur quam hic sapiente tempore consequuntur, odit a?
             Animi ex praesentium eum laborum, consectetur quam? Tenetur magnam
@@ -51,7 +51,7 @@ function AboutMe () {
           </p>
         </article>
         <article className='border border-[#5B5B5B] p-5 w-full'>
-          <h2 className=' text-6xl text-blue-400 w-[99%] text-start flex justify-between items-center relative  '>
+          <h2 className=' text-5xl text-blue-400 w-[99%] text-start flex justify-between items-center relative  '>
             Estudios
             <button
               onClick={handleScroll}
@@ -100,10 +100,10 @@ function AboutMe () {
           </div>
         </article>
         <article className='border border-[#5B5B5B] p-5 w-full'>
-          <h3 className='mt-10 text-6xl text-blue-400 w-full text-start'>
+          <h3 className='  text-5xl text-blue-400 w-full text-start'>
             Aspiraciones
           </h3>
-          <p className='mt-10'>
+          <p className='mt-5'>
             {' '}
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
             nesciunt delectus illo quaerat voluptates atque autem vero quia,

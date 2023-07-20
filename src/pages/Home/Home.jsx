@@ -43,13 +43,13 @@ function Home () {
             className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-red-400 hover:text-gray-200 '
             onClick={() => navigate('/projects')}
           >
-            Projects
+            Projectos
           </button>
           <button
             className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-blue-400 hover:text-gray-200 '
             onClick={() => navigate('/about-me')}
           >
-            About me
+            Sobre mi
           </button>
         </div>
       </section>
