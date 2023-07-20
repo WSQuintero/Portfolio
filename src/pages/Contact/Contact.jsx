@@ -34,6 +34,7 @@ function Contact () {
               placeholder='Nombre'
               name='name'
               id='name'
+              required
             />
             <ValidationError prefix='Name' field='name' errors={state.errors} />
             <div className='flex justify-between  relative w-full'>
@@ -43,6 +44,7 @@ function Contact () {
                 placeholder='Correo electrónico'
                 name='email'
                 id='email'
+                required
               />
               <ValidationError
                 prefix='Email'
@@ -54,6 +56,7 @@ function Contact () {
                 className='text-lg w-[30%] p-4'
                 placeholder='telefono'
                 name='tel'
+                required
               />
               <ValidationError prefix='Tel' field='tel' errors={state.errors} />
             </div>
@@ -62,6 +65,7 @@ function Contact () {
               placeholder='Deja tu mensaje aquí'
               name='message'
               id='message'
+              required
             />
             <ValidationError
               prefix='Message'
