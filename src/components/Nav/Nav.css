@@ -1,0 +1,7 @@
+.menu{
+  @apply p-3 flex sm:h-auto sm:w-[33%] justify-center items-center text-center overflow-y-hidden text-[#5B5B5B] w-[90%];
+}
+
+.nav{
+  @apply flex flex-col sm:flex-row  text-xl text-[#CECECE] mr-10 border border-[#CECECE] px-10 h-full sm:h-auto  w-full lg:w-[30%] justify-center  items-center sm:justify-between rounded-lg gap-6 overflow-y-hidden;
+}
