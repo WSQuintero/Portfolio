@@ -31,7 +31,7 @@ function Home () {
           </figure>
         )}
       </section>
-      <section className='w-full sm:w-[50%] bg-[#5B5B5B] h-full flex flex-col justify-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0'>
+      <section className='w-full sm:w-[50%] bg-[#5B5B5B] h-full flex flex-col justify-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0 overflow-hidden'>
         <h1 className='flex items-center text-center w-[250px] sm:w-[334px] sm:text-end text-6xl text-blue-400 z-20 min-w-[200px] lg:w-full lg:justify-end '>
           Desarrollador Front end
         </h1>
@@ -53,12 +53,12 @@ function Home () {
           </button>
         </div>
       </section>
-      <figure className=' max-w-[400px] max-h-[400px] absolute overflow-hidden flex justify-center items-center top-40 sm:top-auto  z-0'>
+      <figure className=' w-[70%] max-w-[400px] max-h-[400px] absolute overflow-hidden flex justify-center items-center top-[100px] sm:top-auto  z-0'>
         <img
-          src='https://i.ibb.co/tJgCrCP/rostro-editado-1-1.png'
-          alt='rostro-editado-1-1'
+          src='https://i.ibb.co/02bGyjD/rostro-editado-final-1-1.png> '
+          alt='rostro-editado-final'
           border='0'
-          className=' w-[400px] h-[400px] object-cover '
+          className=' w-full h-full object-cover '
         />
       </figure>
     </div>

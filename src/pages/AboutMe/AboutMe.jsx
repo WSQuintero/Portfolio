@@ -23,7 +23,7 @@ function AboutMe () {
       <section className='w-full lg:w-2/4 bg-[#CECECE] h-[100vh] flex justify-center items-center relative'>
         <figure className='flex flex-col items-center justify-center w-full'>
           <img
-            src='https://i.ibb.co/VgBY45s/Rostro-01.png'
+            src='https://i.ibb.co/zsV8sCM/Vectorizaci-n-composici-n-Mesa-de-trabajo-1-1.png'
             className='w-[400px] '
             alt=''
           />
