@@ -1,5 +1,5 @@
 .menu{
-  @apply p-3 flex sm:h-auto sm:w-[33%] justify-center items-center text-center overflow-y-hidden text-[#5B5B5B] w-[90%];
+  @apply hover:bg-blue-400 hover:text-gray-100 p-3 flex sm:h-auto sm:w-[33%] justify-center items-center text-center overflow-y-hidden text-[#5B5B5B] w-[90%];
 }
 
 .nav{
