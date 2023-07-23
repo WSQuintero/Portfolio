@@ -31,17 +31,16 @@ function Projects () {
         {projects.map((project) => (
           <article
             key={project.project}
-            className='bg-gray-600 w-full h-[300px] sm:w-[1fr] sm:h-full relative'
+            className='bg-gray-600 w-full  sm:w-[1fr] sm:h-full relative flex justify-center items-center'
             onMouseEnter={() => handleMouseEnter(project.project)} // Usar la función con el nombre del proyecto
             onMouseLeave={() => handleMouseLeave(project.project)}
           >
-            <div className="z-0">
-              <img src={project.img} alt='' />
-              <p>{project.project}</p>
+            <div className='z-0 w-full'>
+              <img src={project.img} alt={project.project} className='w-full '/>
+              <p className='text-center text-3xl text-[#CECECE]  w-full bg-[#5B5B5B] '>{project.project}</p>
             </div>
             {hoverState[project.project] && (
-              <div className='bg-gray-200 w-full h-[300px] sm:w-[1fr] sm:h-full absolute top-0 z-10'>
-              </div>
+              <div className='bg-gray-200 w-full h-[300px] sm:w-[1fr] sm:h-full absolute top-0 z-10'></div>
             )}
           </article>
         ))}
