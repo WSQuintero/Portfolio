@@ -11,9 +11,19 @@ function ContactIconsTwo () {
           className: 'w-[40px] h-[40px] text-[#5B5B5B] cursor-pointer'
         }}
       >
-        <AiFillGithub />
-        <AiFillLinkedin />
-        <HiAcademicCap />
+        <a
+          href='https://github.com/WSQuintero/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <AiFillGithub />
+        </a>
+        <a href='' target='_blank'>
+          <AiFillLinkedin />
+        </a>
+        <a href='' target='_blank'>
+          <HiAcademicCap />
+        </a>
       </IconContext.Provider>
     </div>
   )

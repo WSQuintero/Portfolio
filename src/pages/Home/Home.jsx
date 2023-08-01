@@ -32,21 +32,19 @@ function Home () {
         )}
       </section>
       <section className='w-full sm:w-[50%] bg-[#5B5B5B] h-full flex flex-col justify-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0 overflow-hidden'>
-        <h1 className='flex items-center text-center w-[250px] sm:w-[334px] sm:text-end text-6xl text-blue-400 z-20 min-w-[200px] lg:w-full lg:justify-end '>
+        <h1 className='flex items-center text-center w-[250px] sm:w-[334px] sm:text-end text-6xl text-blue-400 z-20 min-w-[200px] lg:w-full lg:justify-end font-bold'>
           Desarrollador Front end
         </h1>
-        <h2 className='font-righteous text-3xl text-[#aaaaaa] '>
-          Diseñador visual
-        </h2>
+        <h2 className=' text-3xl text-[#aaaaaa] font-bold'>Diseñador visual</h2>
         <div className='flex gap-5 mt-20 sm:mt-0 flex-col '>
           <button
-            className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-red-400 hover:text-gray-200 '
+            className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-red-400 hover:text-gray-200 font-bold'
             onClick={() => navigate('/projects')}
           >
             Projectos
           </button>
           <button
-            className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-blue-400 hover:text-gray-200 '
+            className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B]  text-xl hover:bg-blue-400 hover:text-gray-200  font-bold'
             onClick={() => navigate('/about-me')}
           >
             Sobre mi
