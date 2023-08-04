@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 
 const MyContext = createContext()
 
@@ -16,6 +16,13 @@ function ContextProvider ({ children }) {
       }
     })
   }
+  const [initialAnimate, setInitialAnimate] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setInitialAnimate(true)
+    }, 2000)
+  }, [])
 
   return (
     <MyContext.Provider
@@ -24,7 +31,8 @@ function ContextProvider ({ children }) {
         setMovilSize,
         listeningResize,
         isBurguerMenuActive,
-        setIsBurguerMenuActive
+        setIsBurguerMenuActive,
+        initialAnimate
       }}
     >
       {children}

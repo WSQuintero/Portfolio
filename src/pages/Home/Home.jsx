@@ -32,7 +32,7 @@ function Home () {
         )}
       </section>
       <section className='w-full sm:w-[50%] bg-[#5B5B5B] h-full flex flex-col justify-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0 overflow-hidden'>
-        <h1 className='flex items-center text-center w-[250px] sm:w-[334px] sm:text-end text-6xl text-blue-400 z-20 min-w-[200px] lg:w-full lg:justify-end font-bold'>
+        <h1 className='flex items-center text-center  sm:text-end text-6xl text-darkBlue  z-20   lg:justify-end font-bold'>
           Desarrollador Front end
         </h1>
         <h2 className=' text-3xl text-[#aaaaaa] font-bold'>Diseñador visual</h2>
@@ -51,7 +51,7 @@ function Home () {
           </button>
         </div>
       </section>
-      <figure className=' w-[70%] max-w-[400px] max-h-[400px] absolute overflow-hidden flex justify-center items-center top-[100px] sm:top-auto  z-0'>
+      <figure className=' w-[70%] max-w-[260px] sm:max-w-[350px] absolute overflow-hidden flex justify-center items-center top-[100px] sm:top-auto  z-0'>
         <img
           src='https://i.ibb.co/02bGyjD/rostro-editado-final-1-1.png> '
           alt='rostro-editado-final'

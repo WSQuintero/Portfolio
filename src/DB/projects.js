@@ -8,25 +8,25 @@ export const projects = [
   },
   {
     img: 'https://i.ibb.co/SddyyGW/Screenshot-from-2023-07-22-19-29-49.png',
-    project: 'movieDb',
+    project: 'MovieDb',
     description: '',
-    repo: '',
-    link: ''
+    repo: 'https://github.com/WSQuintero/API_DB_Movie',
+    link: 'https://wsquintero.github.io/API_DB_Movie/'
   },
   {
     img: 'https://i.ibb.co/bQx2FqT/Screenshot-from-2023-07-22-19-27-40.png',
-    project: 'netflixClone',
+    project: 'NetflixClone',
     description: '',
-    repo: '',
-    link: ''
+    repo: 'https://github.com/WSQuintero/Net_Clone_For_Practice',
+    link: 'https://net-clone-for-practice.vercel.app/'
 
   },
   {
     img: 'https://i.ibb.co/NrjKZXT/Screenshot-from-2023-07-22-19-12-50.png',
-    project: 'shopie',
+    project: 'Shopie',
     description: '',
-    repo: '',
-    link: ''
+    repo: 'https://github.com/WSQuintero/Eshop-React',
+    link: 'https://eshop-react-eight.vercel.app/'
   }
 
 ]

@@ -1,0 +1,3 @@
+.buttons{
+  @apply p-5 bg-[#CECECE]  rounded-xl font-bold text-[#5B5B5B];
+}

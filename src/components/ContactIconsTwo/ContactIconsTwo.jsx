@@ -18,7 +18,10 @@ function ContactIconsTwo () {
         >
           <AiFillGithub />
         </a>
-        <a href='' target='_blank'>
+        <a
+          href='https://www.linkedin.com/in/wilmer-santiago-quintero-camargo-40926a286/'
+          target='_blank' rel="noreferrer"
+        >
           <AiFillLinkedin />
         </a>
         <a href='' target='_blank'>

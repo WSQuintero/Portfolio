@@ -1,18 +1,30 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { AppRoutes } from './Routes/AppRoutes'
 import { NavBar } from './components/NavBar/NavBar'
+import { MyContext } from './context/MyContext/MyContext'
+import { InitialAnimate } from './components/InitialAnimate/InitialAnimate'
 import './App.css'
 
 function App () {
+  const { initialAnimate } = useContext(MyContext)
+
   return (
     <>
-      <header className='flex flex-col sm:flex-row justify-center sm:justify-between items-center bg-[#686868] min-h-[60px] w-full sm:h-[60px] z-10 header fixed font-righteous gap-10'>
-        <NavBar />
-      </header>
-      <main className='font-righteous h-full'>
-        <AppRoutes />
-      </main>
-      <footer></footer>
+      {!initialAnimate
+        ? (
+        <InitialAnimate />
+          )
+        : (
+        <>
+          <header className='flex flex-col sm:flex-row justify-center sm:justify-between items-center bg-darkBlue min-h-[60px] w-full sm:h-[60px] z-10 header fixed font-righteous gap-10'>
+            <NavBar />
+          </header>
+          <main className='font-righteous h-full'>
+            <AppRoutes />
+          </main>
+          <footer></footer>
+        </>
+          )}
     </>
   )
 }

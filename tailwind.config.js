@@ -8,6 +8,10 @@ export default {
     extend: {
       fontFamily: {
         righteous: ['Righteous', 'cursive']
+      },
+      colors: {
+        darkBlue: '#08273C',
+        lightBlue: '#565CA3'
       }
     }
   },
