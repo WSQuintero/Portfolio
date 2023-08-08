@@ -21,7 +21,7 @@ function Projects () {
 
   return (
     <div className='h-full flex flex-col sm:flex-row'>
-      <aside className='w-full sm:w-1/5 bg-[#5B5B5B] h-[200px] sm:min-h-[100vh] mt-[60px] sm:mt-0 flex justify-center items-center'>
+      <aside className='w-full sm:w-1/5 bg-[#08273C] h-[200px] sm:min-h-[100vh] mt-[60px] sm:mt-0 flex justify-center items-center'>
         <h1 className='sm:-rotate-90 text-9xl text-[#CECECE]'>Proyectos</h1>
       </aside>
       <section
@@ -47,11 +47,11 @@ function Projects () {
               </p>
             </div>
             {hoverState[project.project] && (
-              <div className='bg-gray-600/80 flex flex-col justify-center items-center w-full h-[300px] sm:w-[1fr] sm:h-full absolute top-0 z-10'>
-                <h3 className='text-[#CECECE] font-bold text-5xl'>
+              <div className='bg-[#e7f0fc]/80 flex flex-col justify-center items-center w-full h-[300px] sm:w-[1fr] sm:h-full absolute top-0 z-10'>
+                <h3 className='text-[#08273C] font-bold text-5xl'>
                   {project.project}
                 </h3>
-                <p className='text-[#CECECE] text-xl'>{project.description}</p>
+                <p className='text-[#08273C] text-xl'>{project.description}</p>
                 <SeeRepositories repo={project.repo} link={project.link} />
               </div>
             )}

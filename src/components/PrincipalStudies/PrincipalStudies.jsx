@@ -4,7 +4,7 @@ import { principalStudies } from '../../DB/studies'
 function PrincipalStudies () {
   return (
     <div className=' w-[100%]  shrink-0  flex  items-center justify-start   relative '>
-      <ul className='w-full flex gap-3 justify-center items-center flex-shrink flex-wrap'>
+      <ul className='w-full flex gap-3 justify-center sm:justify-between items-center flex-shrink flex-wrap'>
         {principalStudies.map((studie) => (
           <li
             key={studie.studie}
