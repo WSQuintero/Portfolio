@@ -21,12 +21,14 @@ function Projects () {
 
   return (
     <div className='h-full flex flex-col sm:flex-row'>
-      <aside className='w-full sm:w-1/5 bg-[#08273C] h-[200px] sm:min-h-[100vh] mt-[60px] sm:mt-0 flex justify-center items-center'>
-        <h1 className='sm:-rotate-90 text-9xl text-[#CECECE]'>Proyectos</h1>
+      <aside className='w-full sm:w-1/5 bg-[#e7f0fc] h-[200px] sm:min-h-[100vh] mt-[60px] sm:mt-0 flex justify-center items-center'>
+        <h1 className='sm:-rotate-90 text-6xl sm:text-7xl text-[#08273C]  font-Akira mt-20'>
+          Proyectos
+        </h1>
       </aside>
       <section
         className={
-          'w-full sm:w-4/5 bg-[#CECECE] min-h-[100vh] flex flex-col sm:grid  sm:grid-cols-2 sm:pt-[60px]'
+          'w-full sm:w-4/5 bg-[#CECECE] min-h-[100vh] flex flex-col sm:grid  sm:grid-cols-2 sm:pt-[60px] '
         }
       >
         {projects.map((project) => (
@@ -47,7 +49,7 @@ function Projects () {
               </p>
             </div>
             {hoverState[project.project] && (
-              <div className='bg-[#e7f0fc]/80 flex flex-col justify-center items-center w-full h-[300px] sm:w-[1fr] sm:h-full absolute top-0 z-10'>
+              <div className='bg-[#e7f0fc]/80 flex flex-col justify-center items-center w-full h-full  sm:h-full absolute top-0 z-10'>
                 <h3 className='text-[#08273C] font-bold text-5xl'>
                   {project.project}
                 </h3>

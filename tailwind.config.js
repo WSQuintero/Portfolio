@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        righteous: ['Righteous', 'cursive']
+        righteous: ['Righteous', 'cursive'],
+        Akira: ['Akira', 'cursive']
       },
       colors: {
         darkBlue: '#08273C',

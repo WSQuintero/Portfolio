@@ -23,13 +23,12 @@ function Home () {
         )}
       </section>
       <section
-        className='w-full sm:w-[50%] bg-[#e7f0fc] h-full flex flex-col justi
-      fy-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0 overflow-hidden'
+        className='w-full sm:w-[50%] bg-[#d7e4ff] h-full flex flex-col justify-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0 overflow-hidden'
       >
-        <h1 className='flex items-center text-center  sm:text-end text-6xl text-darkBlue  z-20   lg:justify-end font-bold'>
+        <h1 className='flex items-center text-center   sm:text-end text-6xl text-darkBlue  z-20   lg:justify-end font-bold'>
           Desarrollador Front end
         </h1>
-        <h2 className=' text-3xl text-[#aaaaaa] font-bold'>Diseñador visual</h2>
+        <h2 className=' text-5xl text-[#aaaaaa] font-bold'>Diseñador visual</h2>
         <div className='flex gap-5 mt-20 sm:mt-0 flex-col '>
           <button
             className='w-[200px] bg-gray-200 p-3 rounded-lg z-20 text-[#5B5B5B] border border-[#08273C] text-xl hover:bg-red-400 hover:text-gray-200 font-bold'
@@ -45,7 +44,7 @@ function Home () {
           </button>
         </div>
       </section>
-      <figure className=' w-[70%] max-w-[260px] sm:max-w-[350px] absolute overflow-hidden flex justify-center items-center top-[100px] sm:top-auto  z-0'>
+      <figure className=' min-w-[200px] w-[70%] max-w-[400px] sm:max-w-[350px] absolute overflow-hidden flex justify-center items-center top-[100px] sm:top-auto  z-0'>
         <img
           src='https://i.ibb.co/02bGyjD/rostro-editado-final-1-1.png> '
           alt='rostro-editado-final'
