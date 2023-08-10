@@ -39,7 +39,7 @@ function NavBar () {
           )
         : (
         <IconContext.Provider
-          value={{ className: 'w-[40px] h-[40px] text-gray-200 ml-10' }}
+          value={{ className: `w-[40px] h-[40px] text-[#ebf5fa] ml-10 ${location.pathname === '/about-me' && 'text-gray-700'}` }}
         >
           <GiHamburgerMenu onClick={handleClickMenu} />
         </IconContext.Provider>

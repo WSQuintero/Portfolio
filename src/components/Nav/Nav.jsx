@@ -5,7 +5,8 @@ import './Nav.css'
 
 function Nav () {
   const { setIsBurguerMenuActive, movilSize } = useContext(MyContext)
-  const styles = ({ isActive }) => isActive ? 'menu bg-blue-300' : 'menu bg-[#CECECE]'
+  const styles = ({ isActive }) =>
+    isActive ? 'menu bg-[#ebf5fa] text-[#5B5B5B]' : 'menu bg-[#CECECE]/30'
 
   return (
     <nav className='nav'>

@@ -17,7 +17,7 @@ function Contact () {
   }, [state.succeeded])
 
   return (
-    <div className='h-[100vh] pt-[60px] bg-[#CECECE] flex justify-center items-center flex-col'>
+    <div className='h-[100vh] pt-[60px] bg-[#CECECE] flex justify-center items-center flex-col animate-fade-in-pages '>
       {!state.succeeded
         ? (
         <>
