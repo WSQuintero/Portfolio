@@ -2,12 +2,14 @@ import React, { useEffect, useRef, useState } from 'react'
 import { principalStudies } from '../../DB/studies'
 import { IconContext } from 'react-icons'
 import { BiSolidRightArrow } from 'react-icons/bi'
+import { Diploma } from '../Diploma/Diploma'
 
 function PrincipalStudies ({ isScrolled }) {
   const scrollUl = useRef(null)
   const [studiesIsHover, setStudiesIsHover] = useState(false)
   const [arrowHover, setArrowHover] = useState(false)
   const [slide, setSlide] = useState(false)
+  const [showDiploma, setShowDiploma] = useState(false)
 
   useEffect(() => {
     const handleSlide = () => {
@@ -25,8 +27,7 @@ function PrincipalStudies ({ isScrolled }) {
           scrollUl.current.scrollLeft = newSlide
         } else {
           scrollUl.current.scrollLeft = 0
-          const newSlide =
-            scrollUl.current.scrollLeft
+          const newSlide = scrollUl.current.scrollLeft
           setSlide(newSlide)
         }
       }
@@ -34,7 +35,7 @@ function PrincipalStudies ({ isScrolled }) {
 
     const timeoutId = setTimeout(handleSlide, 3000)
     return () => {
-      clearTimeout(timeoutId) // Limpiar el timeout al desmontar el componente o al actualizar el efecto
+      clearTimeout(timeoutId)
     }
   }, [slide])
 
@@ -42,35 +43,58 @@ function PrincipalStudies ({ isScrolled }) {
     <>
       <ul
         ref={scrollUl}
-        className='w-[100%] h-[200px] flex gap-3 justify-between scroll-smooth  sm:justify-between items-center shrinh-0  overflow-hidden snap-x'
+        className=' w-[100%] min-h-[200px] flex gap-5 justify-between scroll-smooth  sm:justify-between items-start sm:items-center shrinh-0  overflow-hidden snap-x mr-5 '
         onMouseEnter={() => setStudiesIsHover(true)}
         onMouseLeave={() => {
           setStudiesIsHover(false)
         }}
       >
         {principalStudies.map((studie) => (
-          <li
-            key={studie.studie}
-            className=' snap-center flex gap-1 justify-between flex-col border border-[#5B5B5B]  min-w-[100%] h-[100%] items-center text-center rounded-2xl flex-shrink-0 p-5'
-          >
-            <strong className=' w-full bg-red-600 text-white min-h-12 p-3 grid place-content-center text-3xl rounded-t-2xl'>
-              {studie.studie}
-            </strong>
-            <div className='flex justify-between items-center h-full p-4'>
-              <span>{studie.state}</span>
-              <span>{studie.school}</span>
-              <img
-                src={studie.logo}
-                alt={studie.studie}
-                className='w-2/6 p-5'
+          <>
+            <li
+              key={studie.studie}
+              className=' snap-center flex gap-1 justify-start flex-col border border-[#5B5B5B]  min-w-[100%] h-[100%] items-center text-center rounded-2xl flex-shrink-0 '
+            >
+              <h3 className=' mt-4 sm:mt-0 font-semibold w-full bg-[#555555] text-[#e2e2e2] min-h-12 p-3 grid place-content-center sm:text-3xl rounded-t-2xl'>
+                {studie.studie}
+              </h3>
+              <div className='flex justify-start sm:justify-between sm:items-center  p-4 w-full flex-col sm:flex-row'>
+                <ul className='flex flex-col gap-3 ml-5 sm:w-2/5 justify-start items-start '>
+                  <li className='border-2 font-semibold border-[#6eadff] text-[#366096]  p-3 rounded-md text-xl w-full sm:w-[100px]'>
+                    {studie.state}
+                  </li>
+                  <li className='border-2 font-semibold border-[#ff5858] text-[#ff5858] p-3 rounded-md sm:text-xl w-full sm:w-[100px]'>
+                    {studie.school}
+                  </li>
+                  <button
+                    onClick={() => {
+                      setShowDiploma(true)
+                    }}
+                    className='font-semibold bg-[#389626] hover:border-[#389626] border w-full sm:w-[100px] hover:w-[100%] transition-all duration-200 hover:bg-[#e7ffe3] hover:text-[#389626] cursor-pointer text-[#ffffff] p-3 rounded-md text-xl '
+                  >
+                    Ver diploma
+                  </button>
+                </ul>
+
+                <img
+                  src={studie.logo}
+                  alt={studie.studie}
+                  className='sm:w-2/5 max-h-[100px] p-5 object-contain'
+                />
+              </div>
+            </li>
+            {showDiploma && (
+              <Diploma
+                setShowDiploma={setShowDiploma}
+                diploma={studie.diploma}
               />
-            </div>
-          </li>
+            )}
+          </>
         ))}
       </ul>
-      {!isScrolled && studiesIsHover && (
+      {!isScrolled && !showDiploma && studiesIsHover && (
         <div
-          className='w-[90%] flex absolute justify-between bottom-10'
+          className='w-[100%] flex absolute justify-between h-auto too-0 sm:top-[calc(40%)]'
           onMouseEnter={() => {
             setStudiesIsHover(true)
             setArrowHover(true)
@@ -79,29 +103,33 @@ function PrincipalStudies ({ isScrolled }) {
             setArrowHover(false)
           }}
         >
-          <IconContext.Provider
-            value={{
-              className:
-                'w-[100px] h-[100px] rotate-180 cursor-pointer text-[#5B5B5B]/30'
-            }}
-          >
-            <BiSolidRightArrow
-              onClick={() => {
-                scrollUl.current.scrollLeft -= scrollUl.current.clientWidth
+          <div className='p-4  bg-[#d8d8d8] w-[70px] h-[70px] gtext-center flex justify-center items-center rounded-full opacity-70'>
+            <IconContext.Provider
+              value={{
+                className:
+                  'w-[40px] h-[40px] rotate-180 cursor-pointer text-[#6eadff]'
               }}
-            />
-          </IconContext.Provider>
-          <IconContext.Provider
-            value={{
-              className: 'w-[100px] h-[100px] cursor-pointer text-[#5B5B5B]/30'
-            }}
-          >
-            <BiSolidRightArrow
-              onClick={() => {
-                scrollUl.current.scrollLeft += scrollUl.current.clientWidth
+            >
+              <BiSolidRightArrow
+                onClick={() => {
+                  scrollUl.current.scrollLeft -= scrollUl.current.clientWidth
+                }}
+              />
+            </IconContext.Provider>
+          </div>
+          <div className='p-4  bg-[#d8d8d8] w-[70px] h-[70px] gtext-center flex justify-center items-center rounded-full opacity-70'>
+            <IconContext.Provider
+              value={{
+                className: 'w-[100px] h-[40px] cursor-pointer text-[#6eadff]'
               }}
-            />
-          </IconContext.Provider>
+            >
+              <BiSolidRightArrow
+                onClick={() => {
+                  scrollUl.current.scrollLeft += scrollUl.current.clientWidth
+                }}
+              />
+            </IconContext.Provider>
+          </div>
         </div>
       )}
     </>

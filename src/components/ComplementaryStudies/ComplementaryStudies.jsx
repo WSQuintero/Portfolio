@@ -3,16 +3,13 @@ import { complementaryStudies } from '../../DB/studies'
 
 function ComplementaryStudies () {
   return (
-    <ul>
+    <ul className='flex flex-col gap-3'>
       {complementaryStudies.map((complementary) => (
-        <li key={complementary.studie} className='w-full flex '>
+        <li key={complementary.studie} className=' flex border-2 font-semibold border-[#6eadff] text-[#366096]  p-1 rounded-md text-xl w-full] '>
           <div className='w-[70%] flex justify-between '>
             <strong>{complementary.studie}</strong>
-            <span>{complementary.state}</span>
           </div>
-          <span className='w-[30%] flex justify-end '>
-            {complementary.school}
-          </span>
+          <img src={complementary.logo} alt="logo" className="max-h-[40px]" />
         </li>
       ))}
     </ul>

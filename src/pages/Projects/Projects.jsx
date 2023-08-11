@@ -28,13 +28,13 @@ function Projects () {
       </aside>
       <section
         className={
-          'w-full sm:w-5/6 bg-[#8a8a8a] min-h-[100vh] flex flex-col sm:grid  sm:grid-cols-2 sm:pt-[60px] gap-3 '
+          'w-full sm:w-5/6 bg-[#8a8a8a] flex flex-col sm:grid  sm:grid-cols-2 sm:pt-[60px] gap-3 '
         }
       >
         {projects.map((project) => (
           <article
             key={project.project}
-            className='bg-gray-600 w-full  sm:w-[1fr]  relative flex justify-center items-center rounded-3xl'
+            className='bg-gray-600 w-full  sm:w-[1fr]  relative flex justify-center items-center rounded-3xl '
             onMouseEnter={() => handleMouseEnter(project.project)} // Usar la función con el nombre del proyecto
             onMouseLeave={() => handleMouseLeave(project.project)}
           >
@@ -46,11 +46,23 @@ function Projects () {
               />
             </div>
             {hoverState[project.project] && (
-              <div className='bg-[#e7f0fc]/80 flex flex-col justify-center items-center w-full h-full  rounded-3xl sm:h-full absolute top-0 z-10'>
-                <h3 className='text-[#08273C] font-bold text-5xl'>
+              <div className='bg-[#222222]/[80%] flex flex-col justify-center items-center w-full h-full gap-2 rounded-3xl sm:h-full absolute top-0 z-10 p-10 text-justify'>
+                <h3 className='text-[#f5fbff] font-bold text-5xl'>
                   {project.project}
                 </h3>
-                <p className='text-[#08273C] text-xl'>{project.description}</p>
+                <p className='text-[#e9f6ff] text-xl  w-full h-[100px] md:h-auto overflow-scroll md:overflow-hidden'>
+                  {project.description}
+                </p>
+                <ul className='flex w-[100%] justify-center items-center bg-[#c5d0ff]/50 rounded-xl'>
+                  {project?.tec?.map((imgLogo) => (
+                    <li
+                      key={imgLogo}
+                      className='flex-shrink-0 w-[60px] list-none'
+                    >
+                      <img src={imgLogo} alt='' />
+                    </li>
+                  ))}
+                </ul>
                 <SeeRepositories repo={project.repo} link={project.link} />
               </div>
             )}

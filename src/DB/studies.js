@@ -7,11 +7,11 @@ const principalStudies = [
 ]
 
 const complementaryStudies = [
-  { studie: 'Curso avanzado de html y css', school: 'Platzi', state: 'Finalizado' },
-  { studie: 'Curso avanzado de Tailwind', school: 'Platzi', state: 'Finalizado' },
-  { studie: 'Curso avanzado de Javascript', school: 'Platzi', state: 'Finalizado' },
-  { studie: 'Curso avanzado de React', school: 'Platzi', state: 'Finalizado' },
-  { studie: 'Curso avanzado de React con Firebase', school: 'U-distrital', state: 'Finalizado' }
+  { studie: 'Curso avanzado de html y css', school: 'Platzi', state: 'Finalizado', logo: 'https://seeklogo.com/images/P/platzi-logo-98005E6AD6-seeklogo.com.png' },
+  { studie: 'Curso de Tailwind', school: 'Platzi', state: 'Finalizado', logo: 'https://seeklogo.com/images/P/platzi-logo-98005E6AD6-seeklogo.com.png' },
+  { studie: 'Curso avanzado de Javascript', school: 'Platzi', state: 'Finalizado', logo: 'https://seeklogo.com/images/P/platzi-logo-98005E6AD6-seeklogo.com.png' },
+  { studie: 'Curso avanzado de React', school: 'Platzi', state: 'Finalizado', logo: 'https://seeklogo.com/images/P/platzi-logo-98005E6AD6-seeklogo.com.png' },
+  { studie: 'Curso de React con Firebase', school: 'U-distrital', state: 'Finalizado', logo: 'https://www.udistrital.edu.co/themes/custom/versh/logo.png' }
 ]
 
 export { principalStudies, complementaryStudies }

@@ -23,7 +23,7 @@ function AboutMe () {
           Sobre mi
         </h1>
       </section>
-      <section className='lg:w-[53vw]  bg-[#d3d3d3]  flex flex-col justify-center items-center p-20 relative gap-10 '>
+      <section className='lg:w-[53vw]  bg-[#d3d3d3]  flex flex-col justify-center items-center p-20 relative '>
         <Description />
         <Studies />
       </section>

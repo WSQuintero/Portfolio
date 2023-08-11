@@ -10,7 +10,7 @@ function ContactIcons () {
   return (
     <div
       className={`flex gap-10 justify-center relative ${
-        hash === '/about-me' && ''
+        hash === '/about-me' && 'bg-[#8d8d8d]'
       }   ${hash === '/' && 'bg-[#]'} ${
         hash === '/contact' && 'bg-[#8d8d8d]'
       } rounded-2xl p-2`}
