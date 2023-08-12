@@ -43,53 +43,51 @@ function PrincipalStudies ({ isScrolled }) {
     <>
       <ul
         ref={scrollUl}
-        className=' w-[100%] min-h-[200px] flex gap-5 justify-between scroll-smooth  sm:justify-between items-start sm:items-center shrinh-0  overflow-hidden snap-x mr-5 '
+        className=' w-[100%] h-[250px] sm:h-auto flex justify-start scroll-smooth gap-3 sm:justify-between items-start sm:items-center shrinh-0  overflow-hidden snap-x mr-5 '
         onMouseEnter={() => setStudiesIsHover(true)}
         onMouseLeave={() => {
           setStudiesIsHover(false)
         }}
       >
         {principalStudies.map((studie) => (
-          <>
-            <li
-              key={studie.studie}
-              className=' snap-center flex gap-1 justify-start flex-col border border-[#5B5B5B]  min-w-[100%] h-[100%] items-center text-center rounded-2xl flex-shrink-0 '
-            >
-              <h3 className=' mt-4 sm:mt-0 font-semibold w-full bg-[#555555] text-[#e2e2e2] min-h-12 p-3 grid place-content-center sm:text-3xl rounded-t-2xl'>
-                {studie.studie}
-              </h3>
-              <div className='flex justify-start sm:justify-between sm:items-center  p-4 w-full flex-col sm:flex-row'>
-                <ul className='flex flex-col gap-3 ml-5 sm:w-2/5 justify-start items-start '>
-                  <li className='border-2 font-semibold border-[#6eadff] text-[#366096]  p-3 rounded-md text-xl w-full sm:w-[100px]'>
-                    {studie.state}
-                  </li>
-                  <li className='border-2 font-semibold border-[#ff5858] text-[#ff5858] p-3 rounded-md sm:text-xl w-full sm:w-[100px]'>
-                    {studie.school}
-                  </li>
-                  <button
-                    onClick={() => {
-                      setShowDiploma(true)
-                    }}
-                    className='font-semibold bg-[#389626] hover:border-[#389626] border w-full sm:w-[100px] hover:w-[100%] transition-all duration-200 hover:bg-[#e7ffe3] hover:text-[#389626] cursor-pointer text-[#ffffff] p-3 rounded-md text-xl '
-                  >
-                    Ver diploma
-                  </button>
-                </ul>
+          <li
+            key={studie.studie}
+            className='  snap-center flex gap-1 justify-start flex-col border border-[#5B5B5B]  w-[98%] h-[100%] items-center text-center rounded-2xl flex-shrink-0 '
+          >
+            <h3 className=' mt-4 sm:mt-0 font-semibold w-full bg-[#555555] text-[#e2e2e2] min-h-12 p-3 grid place-content-center sm:text-3xl rounded-t-2xl'>
+              {studie.studie}
+            </h3>
+            <div className='flex justify-start sm:justify-between sm:items-center  p-4 w-full flex-col sm:flex-row'>
+              <ul className='flex flex-col gap-3 ml-5 sm:w-2/5 justify-start items-start '>
+                <li className='border-2 font-semibold border-[#6eadff] text-[#366096]  p-3 rounded-md text-xl w-full sm:w-[100px]'>
+                  {studie.state}
+                </li>
+                <li className='border-2 font-semibold border-[#ff5858] text-[#ff5858] p-3 rounded-md sm:text-xl w-full sm:w-[100px]'>
+                  {studie.school}
+                </li>
+                <button
+                  onClick={() => {
+                    setShowDiploma(true)
+                  }}
+                  className='font-semibold bg-[#389626] hover:border-[#389626] border w-full sm:w-[100px] hover:w-[100%] transition-all duration-200 hover:bg-[#e7ffe3] hover:text-[#389626] cursor-pointer text-[#ffffff] p-3 rounded-md text-xl '
+                >
+                  Ver diploma
+                </button>
+              </ul>
 
-                <img
-                  src={studie.logo}
-                  alt={studie.studie}
-                  className='sm:w-2/5 max-h-[100px] p-5 object-contain'
-                />
-              </div>
-            </li>
+              <img
+                src={studie.logo}
+                alt={studie.studie}
+                className='sm:w-2/5 max-h-[100px] p-5 object-contain'
+              />
+            </div>
             {showDiploma && (
               <Diploma
                 setShowDiploma={setShowDiploma}
                 diploma={studie.diploma}
               />
             )}
-          </>
+          </li>
         ))}
       </ul>
       {!isScrolled && !showDiploma && studiesIsHover && (

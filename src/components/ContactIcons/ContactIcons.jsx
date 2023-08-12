@@ -6,7 +6,6 @@ import { HiAcademicCap } from 'react-icons/hi2'
 function ContactIcons () {
   const hash = location.pathname
 
-  console.log(hash)
   return (
     <div
       className={`flex gap-10 justify-center relative ${

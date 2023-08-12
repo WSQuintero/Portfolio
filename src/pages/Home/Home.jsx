@@ -25,7 +25,7 @@ function Home () {
         <h1 className='flex items-center text-center   sm:text-end text-6xl 2xl:text-8xl text-[#4e4e4e]  z-20   lg:justify-end font-bold'>
           Desarrollador Front end
         </h1>
-        <h2 className=' text-5xl text-[#cacaca] font-bold 2xl:text-8xl'>
+        <h2 className=' text-5xl text-[#8a8a8a] font-bold 2xl:text-8xl'>
           Diseñador visual
         </h2>
         <div className='flex gap-5 mt-20 sm:mt-0 flex-col '>
@@ -39,7 +39,7 @@ function Home () {
             className='w-[200px] bg-[#6eadff]  p-3 rounded-lg z-20 text-[#FFF] 2xl:w-[400px]  text-2xl 2xl:text-4xl hover:bg-blue-300 hover:text-gray-200  font-bold'
             onClick={() => navigate('/about-me')}
           >
-            Sobre mi
+            Sobre mí
           </button>
         </div>
       </section>

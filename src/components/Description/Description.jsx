@@ -3,15 +3,21 @@ import React from 'react'
 function Description () {
   return (
     <article className='p-5 relative rounded-3xl lg:mt-[50px]'>
-      <p className='mt-3 text-justify text-xl'>
-        Desarrollador front-end y Diseñador visual apasionado por el mundo de la
-        técnología, el diseño y la programación. <br />
-        Mi enfoque principal se basa en asegurar que el código escrito cumpla
-        con altos estándares de calidad. Esto garantiza que los proyectos en los
-        que trabajo puedan crecer sin problemas. Siempre me aseguro de seguir
-        las reglas del equipo, pero también me encanta aportar nuevas ideas para
-        hacer el trabajo aún mejor. Me gusta mezclar mis habilidades técnicas
-        con un toque creativo para superar lo que se espera.
+      <p className='mt-3 text-start text-xl text-[#272727]'>
+        A lo largo de mi vida he adquirido una serie de conocimientos esenciales
+        para desarrollo front-end, como lo son el diseño, programación y
+        aspectos técnicos de sistemas en general. Así como también experiencia
+        en el trabajo en equipo y el aprendizaje constante.
+      </p>
+      <p className='mt-3 text-start text-xl text-[#272727]'>
+        Lo anterior, no solo demuestra mi gran interés por la capacitación
+        constante; sino también mis ganas de ir avanzando en cualquier lugar
+        donde me encuentre trabajando.
+      </p>
+      <p className='mt-3 text-start text-xl text-[#272727]'>
+        Toco guitarra, me gusta el arte y la creatividad, y quiero, sin lugar a
+        dudas, llegar tan lejos como sea posible en este mundo de la
+        programación web.
       </p>
     </article>
   )
