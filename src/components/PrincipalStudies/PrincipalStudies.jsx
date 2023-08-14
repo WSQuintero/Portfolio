@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { principalStudies } from '../../DB/studies'
 import { IconContext } from 'react-icons'
 import { BiSolidRightArrow } from 'react-icons/bi'
-import { Diploma } from '../Diploma/Diploma'
+import { MyContext } from '../../context/MyContext/MyContext'
 
 function PrincipalStudies ({ isScrolled }) {
   const scrollUl = useRef(null)
   const [studiesIsHover, setStudiesIsHover] = useState(false)
   const [arrowHover, setArrowHover] = useState(false)
   const [slide, setSlide] = useState(false)
-  const [showDiploma, setShowDiploma] = useState(false)
+  const { setShowDiploma, setSrcDiploma, showDiploma } = useContext(MyContext)
 
   useEffect(() => {
     const handleSlide = () => {
@@ -65,14 +65,17 @@ function PrincipalStudies ({ isScrolled }) {
                 <li className='border-2 font-semibold border-[#ff5858] text-[#ff5858] p-3 rounded-md sm:text-xl w-full sm:w-[100px]'>
                   {studie.school}
                 </li>
-                <button
-                  onClick={() => {
-                    setShowDiploma(true)
-                  }}
-                  className='font-semibold bg-[#389626] hover:border-[#389626] border w-full sm:w-[100px] hover:w-[100%] transition-all duration-200 hover:bg-[#e7ffe3] hover:text-[#389626] cursor-pointer text-[#ffffff] p-3 rounded-md text-xl '
-                >
-                  Ver diploma
-                </button>
+                {studie.state === 'Graduado' && (
+                  <button
+                    onClick={() => {
+                      setShowDiploma(true)
+                      setSrcDiploma(studie.diploma)
+                    }}
+                    className='font-semibold bg-[#389626] hover:border-[#389626] border w-full sm:w-[100px] hover:w-[100%] transition-all duration-200 hover:bg-[#e7ffe3] hover:text-[#389626] cursor-pointer text-[#ffffff] p-3 rounded-md text-xl '
+                  >
+                    Ver diploma
+                  </button>
+                )}
               </ul>
 
               <img
@@ -81,12 +84,6 @@ function PrincipalStudies ({ isScrolled }) {
                 className='sm:w-2/5 max-h-[100px] p-5 object-contain'
               />
             </div>
-            {showDiploma && (
-              <Diploma
-                setShowDiploma={setShowDiploma}
-                diploma={studie.diploma}
-              />
-            )}
           </li>
         ))}
       </ul>

@@ -4,9 +4,10 @@ import { NavBar } from './components/NavBar/NavBar'
 import { MyContext } from './context/MyContext/MyContext'
 import { InitialAnimate } from './components/InitialAnimate/InitialAnimate'
 import './App.css'
+import { Diploma } from './components/Diploma/Diploma'
 
 function App () {
-  const { initialAnimate } = useContext(MyContext)
+  const { initialAnimate, showDiploma, setShowDiploma } = useContext(MyContext)
 
   return (
     <>
@@ -21,6 +22,11 @@ function App () {
           </header>
           <main className='font-righteous h-full'>
             <AppRoutes />
+            {showDiploma && (
+              <Diploma
+                setShowDiploma={setShowDiploma}
+              />
+            )}
           </main>
           <footer></footer>
         </>
