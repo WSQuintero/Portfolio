@@ -20,7 +20,7 @@ function App () {
           <header className='flex flex-col sm:flex-row justify-center sm:justify-between items-center bg-darkBlue/10 min-h-[60px] w-full sm:h-[60px] z-10 header fixed font-righteous gap-10 overflow-x-hidden'>
             <NavBar />
           </header>
-          <main className='font-righteous h-full w-full '>
+          <main className='font-righteous h-[100vh] w-full sm:overflow-hidden'>
             <AppRoutes />
             {showDiploma && (
               <Diploma

@@ -43,7 +43,7 @@ function PrincipalStudies ({ isScrolled }) {
     <>
       <ul
         ref={scrollUl}
-        className=' w-[100%] h-[250px] sm:h-auto flex justify-start scroll-smooth gap-3 sm:justify-between items-start sm:items-center shrinh-0  overflow-hidden snap-x mr-5 '
+        className=' w-full sm:h-auto flex justify-start scroll-smooth gap-3 sm:justify-between items-start sm:items-center shrinh-0  overflow-hidden snap-x mr-5 '
         onMouseEnter={() => setStudiesIsHover(true)}
         onMouseLeave={() => {
           setStudiesIsHover(false)
@@ -52,7 +52,7 @@ function PrincipalStudies ({ isScrolled }) {
         {principalStudies.map((studie) => (
           <li
             key={studie.studie}
-            className='  snap-center flex gap-1 justify-start flex-col border border-[#5B5B5B]  w-[98%] h-[100%] items-center text-center rounded-2xl flex-shrink-0 '
+            className='  snap-center flex gap-1 justify-start flex-col border border-[#5B5B5B]  w-full h-[100%] items-center text-center rounded-2xl flex-shrink-0 '
           >
             <h3 className=' mt-4 sm:mt-0 font-semibold w-full bg-[#555555] text-[#e2e2e2] min-h-12 p-3 grid place-content-center sm:text-3xl rounded-t-2xl'>
               {studie.studie}

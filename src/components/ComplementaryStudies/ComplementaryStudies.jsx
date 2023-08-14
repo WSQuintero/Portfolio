@@ -3,7 +3,7 @@ import { complementaryStudies } from '../../DB/studies'
 
 function ComplementaryStudies () {
   return (
-    <ul className='flex flex-col gap-3'>
+    <ul className='flex flex-col w-full'>
       {complementaryStudies?.map((complementary) => (
         <li key={complementary.studie} className=' flex border-2 font-semibold border-[#6eadff] text-[#366096]  p-1 rounded-md text-xl w-full] '>
           <div className='w-[70%] flex justify-between '>

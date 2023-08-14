@@ -19,7 +19,7 @@ function Studies () {
     }
   }
   return (
-    <section className=' border-[#5B5B5B] p-5 w-full  relative '>
+    <section className=' border-[#5B5B5B] w-full  relative h-full '>
       <h2 className=' text-5xl text-blue-400 w-[99%] text-start flex justify-between items-center   '>
         {!isScrolled ? 'Estudios principales' : 'Estudios Complementarios'}
         <span>
@@ -32,17 +32,17 @@ function Studies () {
       <div
         className={`flex overflow-x-hidden w-full scroll-smooth mt-5 ${
           !isScrolled
-            ? 'h-[40vh] sm:overflow-y-hidden items-center'
-            : 'h-[40vh] sm:overflow-y-auto items-start'
-        } relative  p-3 gap-3`}
+            ? 'overflow-y-hidden items-center'
+            : 'sm:overflow-y-scroll items-start'
+        } relative   gap-3`}
         ref={scroll}
       >
-        <div className='w-[100%] shrink-0 top-0 flex justify-center '>
+        <div className='w-[100%]  shrink-0 top-0 flex justify-center '>
           <PrincipalStudies isScrolled={isScrolled} />
         </div>
         <div className=' w-[100%] shrink-0 '>
           <LogoStudies />
-          <div className='border border-gray-600 ml-2 p-5 mt-5 rounded-xl'>
+          <div className=' mt-5 rounded-xl h-[20vh]'>
             <ComplementaryStudies />
           </div>
         </div>
