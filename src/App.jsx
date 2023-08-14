@@ -7,7 +7,7 @@ import './App.css'
 import { Diploma } from './components/Diploma/Diploma'
 
 function App () {
-  const { initialAnimate, showDiploma, setShowDiploma } = useContext(MyContext)
+  const { initialAnimate, showDiploma } = useContext(MyContext)
 
   return (
     <>
@@ -22,11 +22,7 @@ function App () {
           </header>
           <main className='font-righteous h-[100vh] w-full sm:overflow-hidden'>
             <AppRoutes />
-            {showDiploma && (
-              <Diploma
-                setShowDiploma={setShowDiploma}
-              />
-            )}
+            {showDiploma && <Diploma />}
           </main>
           <footer></footer>
         </>

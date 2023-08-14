@@ -2,6 +2,7 @@ import React from 'react'
 import { IconContext } from 'react-icons'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { HiAcademicCap } from 'react-icons/hi2'
+import { NavLink } from 'react-router-dom'
 
 function ContactIcons () {
   const hash = location.pathname
@@ -33,9 +34,9 @@ function ContactIcons () {
         >
           <AiFillLinkedin />
         </a>
-        <a href='' target='_blank'>
+        <NavLink to={'/diplomas'}>
           <HiAcademicCap />
-        </a>
+        </NavLink>
       </IconContext.Provider>
     </div>
   )

@@ -3,8 +3,8 @@ import { MyContext } from '../../context/MyContext/MyContext'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { IconContext } from 'react-icons'
 
-function Diploma ({ setShowDiploma }) {
-  const { srcDiploma, setSrcDiploma } = useContext(MyContext)
+function Diploma () {
+  const { srcDiploma, setSrcDiploma, setShowDiploma } = useContext(MyContext)
 
   return (
     <div className='w-full h-[90%]   bottom-0  left-0 flex flex-col sm:flex-row justify-center items-center fixed '>
