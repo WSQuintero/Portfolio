@@ -6,7 +6,7 @@ function Diploma ({ setShowDiploma }) {
 
   return (
     <div className='w-full h-[90vh]   bottom-0  left-0 flex justify-center items-center fixed'>
-      <div className='w-full h-full bg-gray-500/30 blur-sm  z-0 '></div>
+      <div className='w-full h-full bg-gray-300/70 blur-lg  z-0 '></div>
       <button
         className='w-[60px] text-8xl p-4'
         onClick={() => {

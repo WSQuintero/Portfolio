@@ -30,7 +30,7 @@ function Studies () {
         </span>
       </h2>
       <div
-        className={`flex overflow-x-hidden  w-full  scroll-smooth  mt-5 ${
+        className={`flex overflow-x-hidden w-full scroll-smooth mt-5 ${
           !isScrolled
             ? 'h-[40vh] sm:overflow-y-hidden items-center'
             : 'h-[40vh] sm:overflow-y-auto items-start'
