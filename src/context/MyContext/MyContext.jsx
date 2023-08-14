@@ -17,7 +17,8 @@ function ContextProvider ({ children }) {
     })
   }
   const [initialAnimate, setInitialAnimate] = useState(false)
-
+  const [showDiploma, setShowDiploma] = useState(false)
+  const [srcDiploma, setSrcDiploma] = useState('')
   useEffect(() => {
     setTimeout(() => {
       setInitialAnimate(true)
@@ -32,7 +33,11 @@ function ContextProvider ({ children }) {
         listeningResize,
         isBurguerMenuActive,
         setIsBurguerMenuActive,
-        initialAnimate
+        initialAnimate,
+        showDiploma,
+        setShowDiploma,
+        srcDiploma,
+        setSrcDiploma
       }}
     >
       {children}
