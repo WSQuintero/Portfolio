@@ -2,13 +2,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 32px;
-  margin-top: 70px;
+  margin-top: 0px;
   overflow-y: auto;
-  height: 89%;
+  height: 100%;
   padding: 10px;
   position: relative;
   width: 100%;
   overflow-x: hidden;
+  @apply sm:mt-[70px] sm:h-[89%] ;
 }
 
 .img-dip {

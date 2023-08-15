@@ -1,7 +1,7 @@
 .menu{
-  @apply hover:bg-[#6eadff] hover:text-gray-100 p-3 flex sm:h-auto sm:w-[33%] justify-center items-center text-center overflow-y-hidden text-[#ffffff] sm:text-[#5B5B5B] w-[90%] font-bold;
+  @apply hover:bg-[#6eadff] hover:text-gray-100 p-3 flex sm:h-auto sm:w-auto justify-center items-center text-center overflow-y-hidden text-[#ffffff] sm:text-[#5B5B5B] w-[90%] font-bold;
 }
 
 .nav{
-  @apply flex flex-col sm:flex-row  text-2xl text-[#CECECE] mr-10 border border-[#CECECE] px-10 h-full sm:h-auto  w-full lg:w-[30%] justify-center  items-center sm:justify-between rounded-lg gap-6 overflow-y-hidden;
+  @apply flex flex-col sm:flex-row  text-2xl text-[#CECECE] mr-10 border border-[#CECECE] px-10 h-full sm:h-auto  w-full lg:w-auto justify-center  items-center sm:justify-between rounded-lg gap-6 overflow-y-hidden;
 }

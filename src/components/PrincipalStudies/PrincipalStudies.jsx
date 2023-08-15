@@ -52,13 +52,13 @@ function PrincipalStudies ({ isScrolled }) {
         {principalStudies.map((studie) => (
           <li
             key={studie.studie}
-            className='  snap-center flex gap-1 justify-start flex-col border border-[#5B5B5B]  w-full h-[100%] items-center text-center rounded-2xl flex-shrink-0 '
+            className='  snap-center flex gap-1 justify-start flex-col border border-[#5B5B5B]  w-[98%] h-[100%] items-center text-center rounded-2xl flex-shrink-0 '
           >
             <h3 className=' mt-4 sm:mt-0 font-semibold w-full bg-[#555555] text-[#e2e2e2] min-h-12 p-3 grid place-content-center sm:text-3xl rounded-t-2xl'>
               {studie.studie}
             </h3>
-            <div className='flex justify-start sm:justify-between sm:items-center  p-4 w-full flex-col sm:flex-row'>
-              <ul className='flex flex-col gap-3 ml-5 sm:w-2/5 justify-start items-start '>
+            <div className='flex justify-start sm:justify-between sm:items-center  p-4 w-full flex-col sm:flex-row h-full'>
+              <ul className='flex flex-col gap-3 ml-5 sm:w-2/5 justify-center items-center h-full '>
                 <li className='border-2 font-semibold border-[#6eadff] text-[#366096]  p-3 rounded-md text-xl w-full sm:w-[100px]'>
                   {studie.state}
                 </li>

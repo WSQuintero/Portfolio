@@ -40,6 +40,13 @@ function Nav () {
       >
         Contactame
       </NavLink>
+      <NavLink
+        to={'/diplomas'}
+        className={styles}
+        onClick={() => setIsBurguerMenuActive(false)}
+      >
+        Diplomas
+      </NavLink>
     </nav>
   )
 }

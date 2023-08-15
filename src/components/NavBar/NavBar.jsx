@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { MyContext } from '../../context/MyContext/MyContext'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IconContext } from 'react-icons'
@@ -15,8 +15,8 @@ function NavBar () {
     isBurguerMenuActive,
     setIsBurguerMenuActive
   } = useContext(MyContext)
-
   const handleClickMenu = () => setIsBurguerMenuActive(!isBurguerMenuActive)
+  const location = useLocation()
 
   useEffect(() => {
     listeningResize()
@@ -39,7 +39,11 @@ function NavBar () {
           )
         : (
         <IconContext.Provider
-          value={{ className: `w-[40px] h-[40px] text-[#ebf5fa] ml-10 ${location.pathname === '/about-me' && 'text-gray-700'}` }}
+          value={{
+            className: `w-[40px] h-[40px] text-[#ebf5fa] ml-10 ${
+              location.pathname === '/about-me' && 'text-gray-700'
+            } ${location.pathname === '/diplomas' && 'text-gray-700'}`
+          }}
         >
           <GiHamburgerMenu onClick={handleClickMenu} />
         </IconContext.Provider>
