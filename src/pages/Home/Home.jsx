@@ -22,10 +22,10 @@ function Home () {
         )}
       </section>
       <section className='w-full sm:w-[50%] bg-[#eefaff] h-full flex flex-col justify-center items-center sm:justify-end sm:items-end sm:pr-20 pb-20 gap-3 z-0 overflow-hidden'>
-        <h1 className='flex items-center text-center   sm:text-end text-6xl 2xl:text-8xl text-[#4e4e4e]  z-20   lg:justify-end font-bold p-5 sm:p-0'>
+        <h1 className='flex items-center text-center   sm:text-end text-6xl 2xl:text-8xl text-[#646464]  z-20   lg:justify-end font-bold p-5 sm:p-0 font-OleoBold'>
           Desarrollador Front end
         </h1>
-        <h2 className=' text-5xl text-[#8a8a8a] font-bold 2xl:text-8xl'>
+        <h2 className=' text-5xl text-[#999999] font-bold 2xl:text-8xl font-OleoBold'>
           Diseñador visual
         </h2>
         <div className='flex gap-5 mt-20 sm:mt-0 flex-col '>

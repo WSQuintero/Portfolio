@@ -17,7 +17,8 @@ function ContactIcons () {
     >
       <IconContext.Provider
         value={{
-          className: 'w-[40px] h-[40px] text-[#CECECE] cursor-pointer'
+          className:
+            'w-[40px] h-[40px] text-[#CECECE] cursor-pointer hover:text-[#ff5858]'
         }}
       >
         <a

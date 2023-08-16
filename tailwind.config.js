@@ -8,7 +8,10 @@ export default {
     extend: {
       fontFamily: {
         righteous: ['Righteous', 'cursive'],
-        Akira: ['Akira', 'cursive']
+        Akira: ['Akira', 'cursive'],
+        OleoBold: ['OleoScript-Bold'],
+        OleoRegular: ['OleoScript-Regular'],
+        PtSans: ['PTSans-Regular']
       },
       colors: {
         darkBlue: '#08273C',
