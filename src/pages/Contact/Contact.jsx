@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react'
 import Confetti from 'react-confetti'
 
 function Contact () {
-  const [state, handleSubmit] = useForm('mpzgwdnw')
+  const [state, handleSubmit] = useForm('xrgwpvgz')
   const [showConfetti, setShowConfetti] = useState(false)
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function Contact () {
         <>
           <h1 className='text-6xl text-[#5B5B5B] mb-12'>Contacto</h1>
           <form
-            action='https://formspree.io/f/mpzgwdnw'
+            action='https://formspree.io/f/xrgwpvgz'
             method='POST'
             onSubmit={handleSubmit}
             className='flex flex-col gap-10 min-w-[300px]  w-[60%] max-w-[600px] max-h-[300px] justify-center items-center mb-10 p-5'
@@ -58,7 +58,7 @@ function Contact () {
                 name='tel'
                 required
               />
-              <ValidationError prefix='Tel' field='tel' errors={state.errors} />
+              <ValidationError field='tel' errors={state.errors} />
             </div>
             <textarea
               className='text-lg  h-[150px] p-4 w-full'
@@ -74,6 +74,7 @@ function Contact () {
             />
             <button
               className='w-[200px] h-[80px] inline p-4 bg-[#5B5B5B] text-[#CECECE] text-2xl'
+              type='submit'
               disabled={state.submitting}
             >
               Enviar
