@@ -18,6 +18,7 @@ function Diplomas () {
             setSrcDiploma(img)
             setShowDiploma(true)
           }}
+          alt={`diploma ${img}`}
         ></img>
       ))}
       {showDiploma && <Diploma />}
