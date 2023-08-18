@@ -40,7 +40,6 @@ const diplomaPlatzi = [
   'https://i.ibb.co/fG9MnGx/diploma-basico-javascript-page-00001.jpg',
   'https://i.ibb.co/6F5X90n/diploma-complejidad-js-page-00001.jpg',
   'https://i.ibb.co/pwtybKq/diploma-computacion-basica-1-page-00001.jpg',
-  'https://i.ibb.co/pwtybKq/diploma-computacion-basica-1-page-00001.jpg',
   'https://i.ibb.co/ZYXgqyM/diploma-css-grid-layout-page-00001.jpg',
   'https://i.ibb.co/RN4r8p3/diploma-css-grid-page-00001.jpg',
   'https://i.ibb.co/g3m91XT/diploma-devtools-page-00001.jpg',
