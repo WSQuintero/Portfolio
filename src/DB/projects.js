@@ -25,7 +25,7 @@ export const projects = [
 
   },
   {
-    img: 'https://i.ibb.co/NrjKZXT/Screenshot-from-2023-07-22-19-12-50.png',
+    img: 'https://i.ibb.co/whc4jp2/Screenshot-from-2023-08-16-22-04-11.png',
     project: 'Shopie',
     description: 'Este proyecto permite a los usuarios crear cuentas y acceder al sistema mediante registro y autenticación en Firebase. Los usuarios pueden agregar productos al carrito, guardarlos en el almacenamiento local y generar órdenes de compra, las cuales son almacenadas en una base de datos tambien Firebase. Además, los usuarios pueden acceder a detalles de los productos.',
     repo: 'https://github.com/WSQuintero/Eshop-React',
