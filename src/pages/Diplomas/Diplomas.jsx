@@ -18,7 +18,6 @@ function Diplomas () {
             setSrcDiploma(img)
             setShowDiploma(true)
           }}
-          loading='lazy'
         ></img>
       ))}
       {showDiploma && <Diploma />}

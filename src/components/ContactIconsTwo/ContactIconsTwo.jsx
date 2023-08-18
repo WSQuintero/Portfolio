@@ -2,6 +2,7 @@ import React from 'react'
 import { IconContext } from 'react-icons'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { HiAcademicCap } from 'react-icons/hi2'
+import { NavLink } from 'react-router-dom'
 
 function ContactIconsTwo () {
   return (
@@ -20,13 +21,14 @@ function ContactIconsTwo () {
         </a>
         <a
           href='https://www.linkedin.com/in/wilmer-santiago-quintero-camargo-40926a286/'
-          target='_blank' rel="noreferrer"
+          target='_blank'
+          rel='noreferrer'
         >
           <AiFillLinkedin />
         </a>
-        <a href='' target='_blank'>
+        <NavLink to={'/diplomas'}>
           <HiAcademicCap />
-        </a>
+        </NavLink>
       </IconContext.Provider>
     </div>
   )

@@ -22,7 +22,7 @@ function Projects () {
   return (
     <div className='h-full flex flex-col sm:flex-row gap-3 bg-[#8a8a8a] animate-fade-in-pages '>
       <aside className='w-full sm:w-1/6 bg-[#696969] h-[200px] sm:min-h-[100vh] mt-[60px] sm:mt-0 flex justify-center items-center'>
-        <h1 className='sm:-rotate-90 text-6xl sm:text-8xl text-[#CECECE]/50  font-Akira mt-20'>
+        <h1 className='sm:-rotate-90 text-6xl sm:text-[8rem] text-[#CECECE]/50 mt-20 font-OleoBold'>
           Proyectos
         </h1>
       </aside>
@@ -47,7 +47,7 @@ function Projects () {
             </div>
             {hoverState[project.project] && (
               <div className='bg-[#222222]/[80%] flex flex-col justify-center items-center w-full h-full gap-2 rounded-3xl sm:h-full absolute top-0 z-10 p-10 text-justify'>
-                <h3 className='text-[#f5fbff] font-bold text-5xl'>
+                <h3 className='text-[#f5fbff] font-OleoRegular text-5xl'>
                   {project.project}
                 </h3>
                 <p className='text-[#e9f6ff] text-xl  w-full h-[100px] md:h-auto overflow-scroll md:overflow-hidden hidden sm:flex'>
