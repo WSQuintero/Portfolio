@@ -50,7 +50,7 @@ function Projects () {
                 <h3 className='text-[#f5fbff] font-OleoRegular text-5xl'>
                   {project.project}
                 </h3>
-                <p className='text-[#e9f6ff] text-xl  w-full h-[100px] md:h-auto overflow-scroll md:overflow-hidden hidden sm:flex'>
+                <p className='text-[#e9f6ff] text-lg  w-full h-auto  overflow-scroll md:overflow-auto hidden sm:flex'>
                   {project.description}
                 </p>
                 <ul className='flex w-[100%] justify-center items-center bg-[#c5d0ff]/50 rounded-xl sm:mt-10'>
