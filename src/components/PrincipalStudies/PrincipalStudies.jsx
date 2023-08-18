@@ -66,15 +66,17 @@ function PrincipalStudies ({ isScrolled }) {
                   {studie.school}
                 </li>
                 {studie.state === 'Graduado' && (
-                  <button
-                    onClick={() => {
-                      setShowDiploma(true)
-                      setSrcDiploma(studie?.diploma)
-                    }}
-                    className='font-semibold bg-[#389626] hover:border-[#389626] border w-full sm:w-[100px] hover:w-[100%] transition-all duration-200 hover:bg-[#e7ffe3] hover:text-[#389626] cursor-pointer text-[#ffffff] p-3 rounded-md text-xl '
-                  >
-                    Ver diploma
-                  </button>
+                  <li className='list-none'>
+                    <button
+                      onClick={() => {
+                        setShowDiploma(true)
+                        setSrcDiploma(studie?.diploma)
+                      }}
+                      className='font-bold bg-[#389626] hover:border-[#389626] border w-full sm:w-[100px] hover:w-[100%] transition-all duration-200 hover:bg-[#e7ffe3] hover:text-[#389626] cursor-pointer text-[#ffffff] p-3 rounded-md text-xl '
+                    >
+                      Ver diploma
+                    </button>
+                  </li>
                 )}
               </ul>
               <img
