@@ -29,7 +29,7 @@ function ContactIcons () {
           <AiFillGithub />
         </a>
         <a
-          href='https://www.linkedin.com/in/wilmer-santiago-quintero-camargo-40926a286/'
+          href='https://www.linkedin.com/in/webdevsantiagoquintero/'
           target='_blank'
           rel='noreferrer'
         >
