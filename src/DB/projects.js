@@ -1,12 +1,20 @@
 export const projects = [
   {
-    img: 'https://i.ibb.co/T8G0K9b/Screenshot-from-2023-07-22-19-31-47.png" ',
-    project: "TodoList",
+    img: "https://i.ibb.co/qgDLgzh/a-silent.jpg",
+    project: "A silent voice",
+    description: `Un sitio web en React dedicado a la película "A Silent Voice" que muestra imágenes e información sobre la película.`,
+    repo: "https://github.com/WSQuintero/AsilentVoiceProject",
+    link: "https://asilent-voice-project.vercel.app/",
+    tec: ["/js (2).svg", "/React.svg"],
+  },
+  {
+    img: "https://i.ibb.co/whc4jp2/Screenshot-from-2023-08-16-22-04-11.png",
+    project: "Shopie",
     description:
-      "Este proyecto web se encuentra desarrollado en React con el fin de permitir a los usuarios crear, eliminar y marcar tareas como completadas. Las tareas se almacenan localmente en el navegador utilizando LocalStorage, lo que permite que los datos persistan incluso después de cerrar la página. Los usuarios pueden administrar su lista de tareas de manera fácil y efectiva. ",
-    repo: "https://github.com/WSQuintero/listaDeTareas/tree/gh-pages",
-    link: "https://wsquintero.github.io/listaDeTareas/",
-    tec: ["/html.svg", "/css.svg", "/js (2).svg", "/React.svg"],
+      "Este proyecto permite a los usuarios crear cuentas y acceder al sistema mediante registro y autenticación en Firebase. Los usuarios pueden agregar productos al carrito, guardarlos en el almacenamiento local y generar órdenes de compra, las cuales son almacenadas en una base de datos tambien Firebase. Además, los usuarios pueden acceder a detalles de los productos.",
+    repo: "https://github.com/WSQuintero/Eshop-React",
+    link: "https://eshop-react-eight.vercel.app/",
+    tec: ["/js (2).svg", "/React.svg", "/tailwind.svg", "/Firebase_Logo.svg"],
   },
   {
     img: "https://i.ibb.co/SddyyGW/Screenshot-from-2023-07-22-19-29-49.png",
@@ -27,20 +35,12 @@ export const projects = [
     tec: ["/js (2).svg", "/React.svg", "/tailwind.svg", "/Firebase_Logo.svg"],
   },
   {
-    img: "https://i.ibb.co/whc4jp2/Screenshot-from-2023-08-16-22-04-11.png",
-    project: "Shopie",
+    img: 'https://i.ibb.co/T8G0K9b/Screenshot-from-2023-07-22-19-31-47.png" ',
+    project: "TodoList",
     description:
-      "Este proyecto permite a los usuarios crear cuentas y acceder al sistema mediante registro y autenticación en Firebase. Los usuarios pueden agregar productos al carrito, guardarlos en el almacenamiento local y generar órdenes de compra, las cuales son almacenadas en una base de datos tambien Firebase. Además, los usuarios pueden acceder a detalles de los productos.",
-    repo: "https://github.com/WSQuintero/Eshop-React",
-    link: "https://eshop-react-eight.vercel.app/",
-    tec: ["/js (2).svg", "/React.svg", "/tailwind.svg", "/Firebase_Logo.svg"],
-  },
-  {
-    img: "https://i.ibb.co/qgDLgzh/a-silent.jpg",
-    project: "A silent voice",
-    description: `Un sitio web en React dedicado a la película "A Silent Voice" que muestra imágenes e información sobre la película.`,
-    repo: "https://github.com/WSQuintero/AsilentVoiceProject",
-    link: "https://asilent-voice-project.vercel.app/",
-    tec: ["/js (2).svg", "/React.svg"],
+      "Este proyecto web se encuentra desarrollado en React con el fin de permitir a los usuarios crear, eliminar y marcar tareas como completadas. Las tareas se almacenan localmente en el navegador utilizando LocalStorage, lo que permite que los datos persistan incluso después de cerrar la página. Los usuarios pueden administrar su lista de tareas de manera fácil y efectiva. ",
+    repo: "https://github.com/WSQuintero/listaDeTareas/tree/gh-pages",
+    link: "https://wsquintero.github.io/listaDeTareas/",
+    tec: ["/html.svg", "/css.svg", "/js (2).svg", "/React.svg"],
   },
 ]

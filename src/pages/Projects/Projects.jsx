@@ -28,7 +28,7 @@ function Projects () {
       </aside>
       <section
         className={
-          'w-full sm:w-5/6 bg-[#8a8a8a] flex flex-col sm:grid  sm:grid-cols-2 sm:pt-[60px] gap-3 '
+          'w-full sm:w-5/6 bg-[#8a8a8a] flex flex-col sm:grid  sm:grid-cols-2 sm:pt-[60px] gap-3 overflow-y-scroll  '
         }
       >
         {projects.map((project) => (
@@ -38,7 +38,7 @@ function Projects () {
             onMouseEnter={() => handleMouseEnter(project.project)} // Usar la función con el nombre del proyecto
             onMouseLeave={() => handleMouseLeave(project.project)}
           >
-            <div className='z-0 w-full h-full'>
+            <div className='z-0 w-full h-full '>
               <img
                 src={project.img}
                 alt={project.project}
