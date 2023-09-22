@@ -31,11 +31,11 @@ function Studies () {
       </h2>
       <div
         className={
-          'flex overflow-x-hidden w-full scroll-smooth mt-5 relative   gap-3 h-[30vh] '
+          'flex overflow-x-hidden w-full scroll-smooth mt-5 relative   gap-3 h-[45vh] sm:h-[30vh]'
         }
         ref={scroll}
       >
-        <div className='w-[100%]  shrink-0 top-0 flex justify-center  '>
+        <div className='w-[100%]  shrink-0 top-0 flex justify-center  h-full'>
           <PrincipalStudies isScrolled={isScrolled} />
         </div>
         <div className=' w-full shrink-0  flex flex-col items-center'>
