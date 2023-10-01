@@ -33,7 +33,7 @@ function Home () {
             className='w-[200px] bg-[#ff5858] p-3 rounded-lg z-20 text-[#FFF] 2xl:w-[400px] 2xl:text-4xl text-2xl hover:bg-red-300 hover:text-gray-200 font-bold'
             onClick={() => navigate('/projects')}
           >
-            Projectos
+            Proyectos
           </button>
           <button
             className='w-[200px] bg-[#6eadff]  p-3 rounded-lg z-20 text-[#FFF] 2xl:w-[400px]  text-2xl 2xl:text-4xl hover:bg-blue-300 hover:text-gray-200  font-bold'
@@ -45,7 +45,7 @@ function Home () {
       </section>
       <figure className=' min-w-[200px] w-[70%] max-w-[400px] sm:max-w-[350px] 2xl:max-w-[500px] absolute overflow-hidden flex justify-center items-center top-[100px] sm:top-auto  z-0 animate-fade-in-img '>
         <img
-          src='https://i.ibb.co/02bGyjD/rostro-editado-final-1-1.png> '
+          src='https://i.ibb.co/8DNqy29/rostro-compress.png '
           alt='rostro-editado-final'
           border='0'
           className=' w-full h-full object-cover '

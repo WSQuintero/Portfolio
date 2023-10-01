@@ -31,7 +31,7 @@ function Nav () {
         className={styles}
         onClick={() => setIsBurguerMenuActive(false)}
       >
-        Projectos
+        Proyectos
       </NavLink>
       <NavLink
         to={'/contact'}
